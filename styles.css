@@ -1,0 +1,187 @@
+*, *::before, *::after {
+    box-sizing: border-box;  
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #404040;
+    margin: 0;
+}
+
+/* =================
+    Typography 
+   ================= */
+
+h1 {
+    font-size: 1.85rem;
+    font-weight: 400;
+    text-align: start;
+    color: #F7EEF8;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.25rem;
+    margin: 0.167em 0;
+}
+
+p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 1.75em;
+}
+
+p .beta-text { 
+    font-weight: normal;
+    font-size: 4rem;
+}
+
+.subheading {
+    color: #575757;
+    font-weight: 900;  
+    margin-bottom: 0.5em;
+}
+
+
+.fine-print {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    color: #858585;
+}
+
+.login {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #7E168A;
+}
+
+/* =================
+    Flex containers
+   ================= */
+
+.intro,
+.main-content {
+    display: flex;
+    flex-direction: column; 
+    padding-left: 2em;
+    padding-right: 2em;   
+}
+
+/* =================
+    Intro
+   ================= */
+
+.intro { 
+    justify-content: space-between;
+    min-height: 250px;
+    text-align: center;
+    color: #fff;
+    background: #7E168A url("images/intro-bg.jpg");
+    background-size: cover;
+    padding-bottom: 1.5em;
+}
+
+/* ====================
+    Main content
+   ==================== */
+   
+.main-content {
+    align-items: center;
+    padding-top: 2.5em;
+}
+
+.img-main {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.main-content p,
+form {
+    max-width: 450px;
+}
+
+/* =================
+    Form
+   ================= */
+
+input,
+button {
+    font-family: inherit;
+    width: 100%; 
+    border-radius: 5px;   
+}
+
+input {
+    padding: 0.8em;
+    margin-bottom: 0.75em;
+    border: 2px solid #d8dde5;
+}
+
+input:focus {
+    outline: none;
+    border-color: #7E168A;
+    background-color: #f1edf2;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1px;
+    padding: 1em 0;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #7E168A;
+    margin-top: 1.75em;    
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #811A55;
+}
+
+/* =================
+    Media queries 
+   ================= */
+
+@media (min-width: 576px) {
+    body {
+        display: flex;
+    }
+    
+    h1 {
+        font-size: 5vw;
+    }
+    
+    h2 {
+        font-size: 2.625rem;
+    }
+    
+    .beta-text {
+        font-size: 1.25rem;
+    }
+    
+    .intro,
+    .main-content {
+        width: 50%;
+    }
+    
+    .intro {
+        min-height: 100vh;
+    }
+    
+    .main-content {
+        justify-content: center;
+        padding-top: 0;
+    }
+}
