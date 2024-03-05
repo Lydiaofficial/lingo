@@ -83,7 +83,7 @@ a {
     min-height: 250px;
     text-align: center;
     color: #fff;
-    background: #7E168A url(".images/intro-bg.jpg");
+    background: #7E168A url("./images/intro-bg.jpg");
     background-size: cover;
     padding-bottom: 1.5em;
 }
